@@ -11,13 +11,13 @@ Manullay insert codes by xcodeproj
 
    ![target_flow](target_flow.png)
 
-   项目中都会有个主target作为根节点，底下有很多group节点，这些group节点管理者三类文件
+   项目中都会有个主target作为根节点，底下有很多group节点，这些group节点管理着三类文件
 
     1. 常规的 .h/.m 文件
 
     2. 资源文件
 
-    3. 库文件，分为静态库.a文件、动态库.framework文件、阉割版的动态库embed franework文件
+    3. 库文件，分为静态库.a文件、动态库.framework文件、阉割版的动态库embed framework文件
 
 ## 如何引入
 
@@ -105,7 +105,7 @@ Manullay insert codes by xcodeproj
 
 ## 如何清除
 
-　　因为SDK_A仅仅是项目A使用，如果从项目A切换到项目B，此时就得从XXX.xcodeproj文件中清除关于SDK_A的所有引用，其实是添加引用的一个逆向工程。
+　　因为SDK_A仅仅是项目A使用，如果从项目A切换到项目B，此时就得从XXX.xcodeproj文件中清除关于SDK_A的所有引用，其实是添加引用的一个逆向过程。
 
 　　上文中我们说到 将SDK_A插入{$PROJECT_PATH}/plugin_folder，所以只需遍历这个group，清除其中所有的reference即可。
 
