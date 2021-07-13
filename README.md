@@ -136,8 +136,7 @@ Manullay insert codes by xcodeproj
           removeBuildPhaseFilesRecursively(aTarget, group)
           $isEmbed = false
       end
-    <img width="267" alt="target_flow" src="https://user-images.githubusercontent.com/20123445/125480641-245170c0-ec43-4fc1-97fe-f97a1ffc28db.png">
-end
+    end
     ```
  　　* .m 文件的引用由source_build_phase移除
 
